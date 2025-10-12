@@ -128,7 +128,7 @@ def saveSettings():
 		# fügt die neue konfiguration in die listbox
 		saveSettingsListbox.insert(tk.END, dateiname)
 
-#setzt wet auf null
+#setzt wert auf null
 saveSettingsListboxElement = None
 
 
@@ -163,7 +163,7 @@ def settingAktivieren(event):
 	listeArtSortieren = []
 	with open(event+".txt", "r") as f:
 		zeilen = f.readlines()
-	#macht das zeilen kein usnichtbares \n haben
+	#macht das zeilen kein unsichtbares \n haben
 	for i in range(len(zeilen)):
 		zeilen[i] = zeilen[i].strip() 
 
